@@ -155,3 +155,22 @@ the value of the user can be either the name of a user on the system or the user
 
 offten when a command is executed it will have to be executed with special privileges in order to accomplish its task as an example when you change your password with the passwd command your new password is stored in the file /etc/shadow 
 as a regular user you don't have read or write access to this file for security reasons but when you change your password you need to have the write permission to this file 
+
+# the pr command
+
+the pr command does minor formating of files onthe termianal screen or of a printer. For example if you have a long list of names in a file. you can format it onscreen into two or more columns following is the syntax for pr command
+`pr option(s) filename(s)
+
+the pr changes the format of the file only on the screen or on the printed copy; it doesn't modify the orginal file> FLlowing table lists some pr options
+
+
+1. k produces k columns ofouput
+2. -d double-spaces the output (not on all pr versions)
+3. -h "header" takes the next item as report header
+4. -t eliminates the printing of head and the top/bottom margins
+5. -I PAGE_LENGTH sets the page length to PAGE_LENGTH (66) lines. The default number of lnes of text is 56
+6. -o MARGIN : offsets each line with MARGIN (zero) spaces
+7. -w PAGE_WIDTH : sets the page width to PAGE_WIDTH (72) characters for multiple text-column output only
+
+before using pr here are the contents of a sample file named food
+
