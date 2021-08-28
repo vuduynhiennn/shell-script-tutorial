@@ -242,3 +242,8 @@ the following tables list out a few imoprtant commands
 10. quite : helps logout from the current login
 
 
+
+
+# using shell arrays
+
+
